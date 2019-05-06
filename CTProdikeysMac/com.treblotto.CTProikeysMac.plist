@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   com.treblotto.CTProikeysMac.plist
+   CTProdikeysMac
+
+   Created by William Jones on 11/24/18.
+   Copyright (c) 2018 Treblotto Music & Music Technology. All rights reserved.
+-->
+<plist version="1.0">
+	<dict>
+		<key>KeepAlive</key>
+		<false/>
+		<key>Label</key>
+		<string>com.treblottomusictech.CTProdikeysMac</string>
+		<key>ProgramArguments</key>
+		<array>
+			<string>/sbin/kextload</string>
+			<string>/Library/Extensions/CTProdikeysMac.kext</string>
+		</array>
+		<key>RunAtLoad</key>
+		<true/>
+		<key>StandardErrorPath</key>
+		<string>/dev/null</string>
+		<key>StandardOutPath</key>
+		<string>/dev/null</string>
+		<key>UserName</key>
+		<string>root</string>
+	</dict>
+</plist>

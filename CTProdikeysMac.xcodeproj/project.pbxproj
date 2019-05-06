@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE21542521A4F75700CB61C4 /* CTProdikeysMac.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BE21542421A4F75700CB61C4 /* CTProdikeysMac.hpp */; };
+		BE21542721A4F75700CB61C4 /* CTProdikeysMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE21542621A4F75700CB61C4 /* CTProdikeysMac.cpp */; };
+		BE27F2FC21A947CD008484A0 /* com.treblotto.CTProikeysMac.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE27F2FB21A947CD008484A0 /* com.treblotto.CTProikeysMac.plist */; };
+		BE9AD1D521A7338000AF494C /* ProdikeysUSBMIDI.c in Sources */ = {isa = PBXBuildFile; fileRef = BE9AD1D421A7338000AF494C /* ProdikeysUSBMIDI.c */; };
+		BE9AD1D621A733BC00AF494C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE21543421A6440E00CB61C4 /* CoreMIDI.framework */; };
+		BEC2277121AA92EC00BCAD98 /* USBHIDMIDIDriverBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2276121AA92EA00BCAD98 /* USBHIDMIDIDriverBase.cpp */; };
+		BEC2277221AA92EC00BCAD98 /* CTProdikeysHIDMidi.cp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2276321AA92EA00BCAD98 /* CTProdikeysHIDMidi.cp */; };
+		BEC2277321AA92EC00BCAD98 /* HIDVendorMIDIDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2276421AA92EB00BCAD98 /* HIDVendorMIDIDriver.cpp */; };
+		BEC2277421AA92EC00BCAD98 /* USBHIDMIDIDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2276621AA92EB00BCAD98 /* USBHIDMIDIDevice.cpp */; };
+		BEC2277521AA92EC00BCAD98 /* HIDDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2276B21AA92EC00BCAD98 /* HIDDevice.cpp */; };
+		BEC2277B21AA930300BCAD98 /* MIDIDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2277821AA930200BCAD98 /* MIDIDriver.cpp */; };
+		BEC2277C21AA930300BCAD98 /* MIDIDriverDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2277A21AA930300BCAD98 /* MIDIDriverDevice.cpp */; };
+		BEC2277F21AA937700BCAD98 /* MIDIDriverUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2277E21AA937700BCAD98 /* MIDIDriverUtils.cpp */; };
+		BEC2278221AA93FE00BCAD98 /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2278021AA93FD00BCAD98 /* CAHostTimeBase.cpp */; };
+		BEC2278A21AA941900BCAD98 /* CADebugPrintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2278421AA941800BCAD98 /* CADebugPrintf.cpp */; };
+		BEC2278B21AA941900BCAD98 /* CAMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2278521AA941800BCAD98 /* CAMutex.cpp */; };
+		BEC2278C21AA941900BCAD98 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2278921AA941900BCAD98 /* CADebugMacros.cpp */; };
+		BEC2278F21AA944500BCAD98 /* IOServiceClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2278E21AA944500BCAD98 /* IOServiceClient.cpp */; };
+		BEC2279021AA946600BCAD98 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE21543221A50FD100CB61C4 /* IOKit.framework */; };
+		BEC227A821B3C22300BCAD98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC227A721B3C22300BCAD98 /* AppDelegate.m */; };
+		BEC227AA21B3C22500BCAD98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC227A921B3C22500BCAD98 /* Assets.xcassets */; };
+		BEC227AD21B3C22500BCAD98 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC227AB21B3C22500BCAD98 /* MainMenu.xib */; };
+		BEC227B021B3C22500BCAD98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC227AF21B3C22500BCAD98 /* main.m */; };
+		BEC227BB21B3C22600BCAD98 /* CTProdikeysMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC227BA21B3C22600BCAD98 /* CTProdikeysMonitorTests.m */; };
+		BEC227C621B3C32300BCAD98 /* CTProdikeysUSBHIDHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC227C521B3C32300BCAD98 /* CTProdikeysUSBHIDHandler.m */; };
+		BEC227C721B3C34900BCAD98 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE21543221A50FD100CB61C4 /* IOKit.framework */; };
+		BEC227C921B7CE0800BCAD98 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC227C821B7CE0700BCAD98 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEC227B721B3C22600BCAD98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE21541821A4F75700CB61C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEC227A321B3C22300BCAD98;
+			remoteInfo = CTProdikeysMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE21542121A4F75700CB61C4 /* CTProdikeysMac.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTProdikeysMac.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE21542421A4F75700CB61C4 /* CTProdikeysMac.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CTProdikeysMac.hpp; sourceTree = "<group>"; };
+		BE21542621A4F75700CB61C4 /* CTProdikeysMac.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CTProdikeysMac.cpp; sourceTree = "<group>"; };
+		BE21542821A4F75700CB61C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE21543021A50F8900CB61C4 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		BE21543221A50FD100CB61C4 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		BE21543421A6440E00CB61C4 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		BE27F2FB21A947CD008484A0 /* com.treblotto.CTProikeysMac.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.treblotto.CTProikeysMac.plist; sourceTree = "<group>"; };
+		BE9AD1CD21A728EF00AF494C /* prodikeys-midi-driver.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "prodikeys-midi-driver.plugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9AD1CF21A728F000AF494C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE9AD1D321A7338000AF494C /* ProdikeysUSBMIDI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProdikeysUSBMIDI.h; sourceTree = "<group>"; };
+		BE9AD1D421A7338000AF494C /* ProdikeysUSBMIDI.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ProdikeysUSBMIDI.c; sourceTree = "<group>"; };
+		BE9EE7DD21BCC17200FE32C4 /* CTProdikeysMonitor.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = CTProdikeysMonitor.entitlements; sourceTree = "<group>"; };
+		BEC2275C21AA92EA00BCAD98 /* HIDMIDIDeviceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HIDMIDIDeviceManager.cpp; sourceTree = "<group>"; };
+		BEC2275D21AA92EA00BCAD98 /* HIDDeviceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HIDDeviceManager.cpp; sourceTree = "<group>"; };
+		BEC2275E21AA92EA00BCAD98 /* HIDDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIDDeviceManager.h; sourceTree = "<group>"; };
+		BEC2275F21AA92EA00BCAD98 /* HIDMIDIDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIDMIDIDeviceManager.h; sourceTree = "<group>"; };
+		BEC2276021AA92EA00BCAD98 /* HIDDeviceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HIDDeviceManager.cpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDeviceManager/HIDDeviceManager.cpp; sourceTree = "<group>"; };
+		BEC2276121AA92EA00BCAD98 /* USBHIDMIDIDriverBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = USBHIDMIDIDriverBase.cpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/USBHIDMIDIDriverBase.cpp; sourceTree = "<group>"; };
+		BEC2276221AA92EA00BCAD98 /* CTProdikeysHIDMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTProdikeysHIDMidi.h; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/CTProdikeysHIDMidi.h; sourceTree = "<group>"; };
+		BEC2276321AA92EA00BCAD98 /* CTProdikeysHIDMidi.cp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CTProdikeysHIDMidi.cp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/CTProdikeysHIDMidi.cp; sourceTree = "<group>"; };
+		BEC2276421AA92EB00BCAD98 /* HIDVendorMIDIDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HIDVendorMIDIDriver.cpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDVendorMIDIDriver.cpp; sourceTree = "<group>"; };
+		BEC2276521AA92EB00BCAD98 /* USBHIDMIDIDriverBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USBHIDMIDIDriverBase.h; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/USBHIDMIDIDriverBase.h; sourceTree = "<group>"; };
+		BEC2276621AA92EB00BCAD98 /* USBHIDMIDIDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = USBHIDMIDIDevice.cpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/USBHIDMIDIDevice.cpp; sourceTree = "<group>"; };
+		BEC2276721AA92EB00BCAD98 /* HIDVendorMIDIDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIDVendorMIDIDriver.h; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDVendorMIDIDriver.h; sourceTree = "<group>"; };
+		BEC2276821AA92EB00BCAD98 /* HIDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIDDevice.h; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDevice.h; sourceTree = "<group>"; };
+		BEC2276921AA92EB00BCAD98 /* USBHIDMIDIDevice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = USBHIDMIDIDevice.hpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/USBHIDMIDIDevice.hpp; sourceTree = "<group>"; };
+		BEC2276A21AA92EC00BCAD98 /* HIDMIDIDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIDMIDIDeviceManager.h; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDeviceManager/HIDMIDIDeviceManager.h; sourceTree = "<group>"; };
+		BEC2276B21AA92EC00BCAD98 /* HIDDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HIDDevice.cpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDevice.cpp; sourceTree = "<group>"; };
+		BEC2276C21AA92EC00BCAD98 /* HIDDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIDDeviceManager.h; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDeviceManager/HIDDeviceManager.h; sourceTree = "<group>"; };
+		BEC2276D21AA92EC00BCAD98 /* HIDMIDIDeviceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HIDMIDIDeviceManager.cpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDeviceManager/HIDMIDIDeviceManager.cpp; sourceTree = "<group>"; };
+		BEC2277721AA930200BCAD98 /* MIDIDriverDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIDIDriverDevice.h; sourceTree = "<group>"; };
+		BEC2277821AA930200BCAD98 /* MIDIDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIDriver.cpp; sourceTree = "<group>"; };
+		BEC2277921AA930200BCAD98 /* MIDIDriverClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIDIDriverClass.h; sourceTree = "<group>"; };
+		BEC2277A21AA930300BCAD98 /* MIDIDriverDevice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIDriverDevice.cpp; sourceTree = "<group>"; };
+		BEC2277D21AA937700BCAD98 /* MIDIDriverUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIDIDriverUtils.h; sourceTree = "<group>"; };
+		BEC2277E21AA937700BCAD98 /* MIDIDriverUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIDriverUtils.cpp; sourceTree = "<group>"; };
+		BEC2278021AA93FD00BCAD98 /* CAHostTimeBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CAHostTimeBase.cpp; sourceTree = "<group>"; };
+		BEC2278121AA93FE00BCAD98 /* CAHostTimeBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAHostTimeBase.h; sourceTree = "<group>"; };
+		BEC2278321AA941700BCAD98 /* CAMutex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAMutex.h; sourceTree = "<group>"; };
+		BEC2278421AA941800BCAD98 /* CADebugPrintf.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugPrintf.cpp; sourceTree = "<group>"; };
+		BEC2278521AA941800BCAD98 /* CAMutex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CAMutex.cpp; sourceTree = "<group>"; };
+		BEC2278621AA941800BCAD98 /* CADebugMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		BEC2278721AA941800BCAD98 /* CAException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAException.h; sourceTree = "<group>"; };
+		BEC2278821AA941900BCAD98 /* CADebugPrintf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		BEC2278921AA941900BCAD98 /* CADebugMacros.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		BEC2278D21AA944500BCAD98 /* IOServiceClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOServiceClient.h; sourceTree = "<group>"; };
+		BEC2278E21AA944500BCAD98 /* IOServiceClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IOServiceClient.cpp; sourceTree = "<group>"; };
+		BEC2279821AE535800BCAD98 /* CTProdikeysUSBDevice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CTProdikeysUSBDevice.hpp; sourceTree = "<group>"; };
+		BEC2279A21AE535800BCAD98 /* CTProdikeysUSBDevice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CTProdikeysUSBDevice.cpp; sourceTree = "<group>"; };
+		BEC2279C21AE535800BCAD98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC227A421B3C22300BCAD98 /* CTProdikeysMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTProdikeysMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC227A621B3C22300BCAD98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEC227A721B3C22300BCAD98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEC227A921B3C22500BCAD98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEC227AC21B3C22500BCAD98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BEC227AE21B3C22500BCAD98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC227AF21B3C22500BCAD98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEC227B621B3C22500BCAD98 /* CTProdikeysMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTProdikeysMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC227BA21B3C22600BCAD98 /* CTProdikeysMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTProdikeysMonitorTests.m; sourceTree = "<group>"; };
+		BEC227BC21B3C22600BCAD98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC227C421B3C32300BCAD98 /* CTProdikeysUSBHIDHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTProdikeysUSBHIDHandler.h; sourceTree = "<group>"; };
+		BEC227C521B3C32300BCAD98 /* CTProdikeysUSBHIDHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTProdikeysUSBHIDHandler.m; sourceTree = "<group>"; };
+		BEC227C821B7CE0700BCAD98 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE21541E21A4F75700CB61C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9AD1CA21A728EF00AF494C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC2279021AA946600BCAD98 /* IOKit.framework in Frameworks */,
+				BE9AD1D621A733BC00AF494C /* CoreMIDI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC227A121B3C22300BCAD98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC227C921B7CE0800BCAD98 /* Cocoa.framework in Frameworks */,
+				BEC227C721B3C34900BCAD98 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC227B321B3C22500BCAD98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE21541721A4F75700CB61C4 = {
+			isa = PBXGroup;
+			children = (
+				BE21542321A4F75700CB61C4 /* CTProdikeysMac */,
+				BE9AD1CE21A728F000AF494C /* prodikeys-midi-driver */,
+				BEC2279721AE535800BCAD98 /* CTProdikeysUSBDevice */,
+				BEC227A521B3C22300BCAD98 /* CTProdikeysMonitor */,
+				BEC227B921B3C22600BCAD98 /* CTProdikeysMonitorTests */,
+				BE21542221A4F75700CB61C4 /* Products */,
+				BE21542F21A50F8900CB61C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE21542221A4F75700CB61C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE21542121A4F75700CB61C4 /* CTProdikeysMac.kext */,
+				BE9AD1CD21A728EF00AF494C /* prodikeys-midi-driver.plugin */,
+				BEC227A421B3C22300BCAD98 /* CTProdikeysMonitor.app */,
+				BEC227B621B3C22500BCAD98 /* CTProdikeysMonitorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE21542321A4F75700CB61C4 /* CTProdikeysMac */ = {
+			isa = PBXGroup;
+			children = (
+				BE21542421A4F75700CB61C4 /* CTProdikeysMac.hpp */,
+				BE21542621A4F75700CB61C4 /* CTProdikeysMac.cpp */,
+				BE21542821A4F75700CB61C4 /* Info.plist */,
+				BE27F2FB21A947CD008484A0 /* com.treblotto.CTProikeysMac.plist */,
+			);
+			path = CTProdikeysMac;
+			sourceTree = "<group>";
+		};
+		BE21542F21A50F8900CB61C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEC227C821B7CE0700BCAD98 /* Cocoa.framework */,
+				BE21543421A6440E00CB61C4 /* CoreMIDI.framework */,
+				BE21543221A50FD100CB61C4 /* IOKit.framework */,
+				BE21543021A50F8900CB61C4 /* Kernel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE9AD1CE21A728F000AF494C /* prodikeys-midi-driver */ = {
+			isa = PBXGroup;
+			children = (
+				BEC2275B21AA92EA00BCAD98 /* HIDDeviceManager */,
+				BEC2278E21AA944500BCAD98 /* IOServiceClient.cpp */,
+				BEC2278D21AA944500BCAD98 /* IOServiceClient.h */,
+				BEC2278921AA941900BCAD98 /* CADebugMacros.cpp */,
+				BEC2278621AA941800BCAD98 /* CADebugMacros.h */,
+				BEC2278421AA941800BCAD98 /* CADebugPrintf.cpp */,
+				BEC2278821AA941900BCAD98 /* CADebugPrintf.h */,
+				BEC2278721AA941800BCAD98 /* CAException.h */,
+				BEC2278521AA941800BCAD98 /* CAMutex.cpp */,
+				BEC2278321AA941700BCAD98 /* CAMutex.h */,
+				BEC2278021AA93FD00BCAD98 /* CAHostTimeBase.cpp */,
+				BEC2278121AA93FE00BCAD98 /* CAHostTimeBase.h */,
+				BEC2277E21AA937700BCAD98 /* MIDIDriverUtils.cpp */,
+				BEC2277D21AA937700BCAD98 /* MIDIDriverUtils.h */,
+				BEC2277821AA930200BCAD98 /* MIDIDriver.cpp */,
+				BEC2277921AA930200BCAD98 /* MIDIDriverClass.h */,
+				BEC2277A21AA930300BCAD98 /* MIDIDriverDevice.cpp */,
+				BEC2277721AA930200BCAD98 /* MIDIDriverDevice.h */,
+				BEC2276021AA92EA00BCAD98 /* HIDDeviceManager.cpp */,
+				BEC2276C21AA92EC00BCAD98 /* HIDDeviceManager.h */,
+				BEC2276D21AA92EC00BCAD98 /* HIDMIDIDeviceManager.cpp */,
+				BEC2276A21AA92EC00BCAD98 /* HIDMIDIDeviceManager.h */,
+				BEC2276221AA92EA00BCAD98 /* CTProdikeysHIDMidi.h */,
+				BEC2276321AA92EA00BCAD98 /* CTProdikeysHIDMidi.cp */,
+				BEC2276421AA92EB00BCAD98 /* HIDVendorMIDIDriver.cpp */,
+				BEC2276721AA92EB00BCAD98 /* HIDVendorMIDIDriver.h */,
+				BEC2276B21AA92EC00BCAD98 /* HIDDevice.cpp */,
+				BEC2276821AA92EB00BCAD98 /* HIDDevice.h */,
+				BEC2276121AA92EA00BCAD98 /* USBHIDMIDIDriverBase.cpp */,
+				BEC2276521AA92EB00BCAD98 /* USBHIDMIDIDriverBase.h */,
+				BEC2276621AA92EB00BCAD98 /* USBHIDMIDIDevice.cpp */,
+				BEC2276921AA92EB00BCAD98 /* USBHIDMIDIDevice.hpp */,
+				BE9AD1CF21A728F000AF494C /* Info.plist */,
+				BE9AD1D321A7338000AF494C /* ProdikeysUSBMIDI.h */,
+				BE9AD1D421A7338000AF494C /* ProdikeysUSBMIDI.c */,
+			);
+			path = "prodikeys-midi-driver";
+			sourceTree = "<group>";
+		};
+		BEC2275B21AA92EA00BCAD98 /* HIDDeviceManager */ = {
+			isa = PBXGroup;
+			children = (
+				BEC2275C21AA92EA00BCAD98 /* HIDMIDIDeviceManager.cpp */,
+				BEC2275D21AA92EA00BCAD98 /* HIDDeviceManager.cpp */,
+				BEC2275E21AA92EA00BCAD98 /* HIDDeviceManager.h */,
+				BEC2275F21AA92EA00BCAD98 /* HIDMIDIDeviceManager.h */,
+			);
+			name = HIDDeviceManager;
+			path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDeviceManager;
+			sourceTree = "<group>";
+		};
+		BEC2279721AE535800BCAD98 /* CTProdikeysUSBDevice */ = {
+			isa = PBXGroup;
+			children = (
+				BEC2279821AE535800BCAD98 /* CTProdikeysUSBDevice.hpp */,
+				BEC2279A21AE535800BCAD98 /* CTProdikeysUSBDevice.cpp */,
+				BEC2279C21AE535800BCAD98 /* Info.plist */,
+			);
+			path = CTProdikeysUSBDevice;
+			sourceTree = "<group>";
+		};
+		BEC227A521B3C22300BCAD98 /* CTProdikeysMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				BE9EE7DD21BCC17200FE32C4 /* CTProdikeysMonitor.entitlements */,
+				BEC227C321B3C2D700BCAD98 /* HID */,
+				BEC227A621B3C22300BCAD98 /* AppDelegate.h */,
+				BEC227A721B3C22300BCAD98 /* AppDelegate.m */,
+				BEC227A921B3C22500BCAD98 /* Assets.xcassets */,
+				BEC227AB21B3C22500BCAD98 /* MainMenu.xib */,
+				BEC227AE21B3C22500BCAD98 /* Info.plist */,
+				BEC227AF21B3C22500BCAD98 /* main.m */,
+			);
+			path = CTProdikeysMonitor;
+			sourceTree = "<group>";
+		};
+		BEC227B921B3C22600BCAD98 /* CTProdikeysMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEC227BA21B3C22600BCAD98 /* CTProdikeysMonitorTests.m */,
+				BEC227BC21B3C22600BCAD98 /* Info.plist */,
+			);
+			path = CTProdikeysMonitorTests;
+			sourceTree = "<group>";
+		};
+		BEC227C321B3C2D700BCAD98 /* HID */ = {
+			isa = PBXGroup;
+			children = (
+				BEC227C421B3C32300BCAD98 /* CTProdikeysUSBHIDHandler.h */,
+				BEC227C521B3C32300BCAD98 /* CTProdikeysUSBHIDHandler.m */,
+			);
+			path = HID;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BE21541C21A4F75700CB61C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE21542521A4F75700CB61C4 /* CTProdikeysMac.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BE21542021A4F75700CB61C4 /* CTProdikeysMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE21542B21A4F75700CB61C4 /* Build configuration list for PBXNativeTarget "CTProdikeysMac" */;
+			buildPhases = (
+				BE21541C21A4F75700CB61C4 /* Headers */,
+				BE21541D21A4F75700CB61C4 /* Sources */,
+				BE21541E21A4F75700CB61C4 /* Frameworks */,
+				BE21541F21A4F75700CB61C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CTProdikeysMac;
+			productName = CTProdikeysMac;
+			productReference = BE21542121A4F75700CB61C4 /* CTProdikeysMac.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		BE9AD1CC21A728EF00AF494C /* prodikeys-midi-driver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE9AD1D221A728F000AF494C /* Build configuration list for PBXNativeTarget "prodikeys-midi-driver" */;
+			buildPhases = (
+				BE9AD1C921A728EF00AF494C /* Sources */,
+				BE9AD1CA21A728EF00AF494C /* Frameworks */,
+				BE9AD1CB21A728EF00AF494C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "prodikeys-midi-driver";
+			productName = "prodikeys-midi-driver";
+			productReference = BE9AD1CD21A728EF00AF494C /* prodikeys-midi-driver.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BEC227A321B3C22300BCAD98 /* CTProdikeysMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC227BD21B3C22600BCAD98 /* Build configuration list for PBXNativeTarget "CTProdikeysMonitor" */;
+			buildPhases = (
+				BEC227A021B3C22300BCAD98 /* Sources */,
+				BEC227A121B3C22300BCAD98 /* Frameworks */,
+				BEC227A221B3C22300BCAD98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CTProdikeysMonitor;
+			productName = CTProdikeysMonitor;
+			productReference = BEC227A421B3C22300BCAD98 /* CTProdikeysMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEC227B521B3C22500BCAD98 /* CTProdikeysMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC227C021B3C22600BCAD98 /* Build configuration list for PBXNativeTarget "CTProdikeysMonitorTests" */;
+			buildPhases = (
+				BEC227B221B3C22500BCAD98 /* Sources */,
+				BEC227B321B3C22500BCAD98 /* Frameworks */,
+				BEC227B421B3C22500BCAD98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEC227B821B3C22600BCAD98 /* PBXTargetDependency */,
+			);
+			name = CTProdikeysMonitorTests;
+			productName = CTProdikeysMonitorTests;
+			productReference = BEC227B621B3C22500BCAD98 /* CTProdikeysMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE21541821A4F75700CB61C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Treblotto Music & Music Technology";
+				TargetAttributes = {
+					BE21542021A4F75700CB61C4 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					BE9AD1CC21A728EF00AF494C = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					BEC227A321B3C22300BCAD98 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					BEC227B521B3C22500BCAD98 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = BEC227A321B3C22300BCAD98;
+					};
+				};
+			};
+			buildConfigurationList = BE21541B21A4F75700CB61C4 /* Build configuration list for PBXProject "CTProdikeysMac" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE21541721A4F75700CB61C4;
+			productRefGroup = BE21542221A4F75700CB61C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE21542021A4F75700CB61C4 /* CTProdikeysMac */,
+				BE9AD1CC21A728EF00AF494C /* prodikeys-midi-driver */,
+				BEC227A321B3C22300BCAD98 /* CTProdikeysMonitor */,
+				BEC227B521B3C22500BCAD98 /* CTProdikeysMonitorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE21541F21A4F75700CB61C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE27F2FC21A947CD008484A0 /* com.treblotto.CTProikeysMac.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9AD1CB21A728EF00AF494C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC227A221B3C22300BCAD98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC227AA21B3C22500BCAD98 /* Assets.xcassets in Resources */,
+				BEC227AD21B3C22500BCAD98 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC227B421B3C22500BCAD98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE21541D21A4F75700CB61C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE21542721A4F75700CB61C4 /* CTProdikeysMac.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE9AD1C921A728EF00AF494C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC2277C21AA930300BCAD98 /* MIDIDriverDevice.cpp in Sources */,
+				BEC2277321AA92EC00BCAD98 /* HIDVendorMIDIDriver.cpp in Sources */,
+				BEC2278A21AA941900BCAD98 /* CADebugPrintf.cpp in Sources */,
+				BEC2278B21AA941900BCAD98 /* CAMutex.cpp in Sources */,
+				BEC2277F21AA937700BCAD98 /* MIDIDriverUtils.cpp in Sources */,
+				BEC2277521AA92EC00BCAD98 /* HIDDevice.cpp in Sources */,
+				BEC2277121AA92EC00BCAD98 /* USBHIDMIDIDriverBase.cpp in Sources */,
+				BEC2278C21AA941900BCAD98 /* CADebugMacros.cpp in Sources */,
+				BEC2278221AA93FE00BCAD98 /* CAHostTimeBase.cpp in Sources */,
+				BEC2277B21AA930300BCAD98 /* MIDIDriver.cpp in Sources */,
+				BEC2278F21AA944500BCAD98 /* IOServiceClient.cpp in Sources */,
+				BE9AD1D521A7338000AF494C /* ProdikeysUSBMIDI.c in Sources */,
+				BEC2277221AA92EC00BCAD98 /* CTProdikeysHIDMidi.cp in Sources */,
+				BEC2277421AA92EC00BCAD98 /* USBHIDMIDIDevice.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC227A021B3C22300BCAD98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC227B021B3C22500BCAD98 /* main.m in Sources */,
+				BEC227C621B3C32300BCAD98 /* CTProdikeysUSBHIDHandler.m in Sources */,
+				BEC227A821B3C22300BCAD98 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC227B221B3C22500BCAD98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC227BB21B3C22600BCAD98 /* CTProdikeysMonitorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEC227B821B3C22600BCAD98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEC227A321B3C22300BCAD98 /* CTProdikeysMonitor */;
+			targetProxy = BEC227B721B3C22600BCAD98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEC227AB21B3C22500BCAD98 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEC227AC21B3C22500BCAD98 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE21542921A4F75700CB61C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BE21542A21A4F75700CB61C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BE21542C21A4F75700CB61C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEVELOPMENT_TEAM = VW5M3863V7;
+				INFOPLIST_FILE = CTProdikeysMac/Info.plist;
+				MODULE_NAME = com.treblottomusictech.CTProdikeysMac;
+				MODULE_VERSION = 1.0.0d1;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-inconsistent-missing-override",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.treblottomusictech.CTProdikeysMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		BE21542D21A4F75700CB61C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEVELOPMENT_TEAM = VW5M3863V7;
+				INFOPLIST_FILE = CTProdikeysMac/Info.plist;
+				MODULE_NAME = com.treblottomusictech.CTProdikeysMac;
+				MODULE_VERSION = 1.0.0d1;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wno-inconsistent-missing-override",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.treblottomusictech.CTProdikeysMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		BE9AD1D021A728F000AF494C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VW5M3863V7;
+				INFOPLIST_FILE = "prodikeys-midi-driver/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.treblottomusictech.midi.driver.prodikeys;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		BE9AD1D121A728F000AF494C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VW5M3863V7;
+				INFOPLIST_FILE = "prodikeys-midi-driver/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.treblottomusictech.midi.driver.prodikeys;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		BEC227BE21B3C22600BCAD98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = CTProdikeysMonitor/CTProdikeysMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VW5M3863V7;
+				INFOPLIST_FILE = CTProdikeysMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.treblottomusictech.CTProdikeysMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BEC227BF21B3C22600BCAD98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = CTProdikeysMonitor/CTProdikeysMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VW5M3863V7;
+				INFOPLIST_FILE = CTProdikeysMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.treblottomusictech.CTProdikeysMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BEC227C121B3C22600BCAD98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VW5M3863V7;
+				INFOPLIST_FILE = CTProdikeysMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.treblottomusictech.CTProdikeysMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CTProdikeysMonitor.app/Contents/MacOS/CTProdikeysMonitor";
+			};
+			name = Debug;
+		};
+		BEC227C221B3C22600BCAD98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VW5M3863V7;
+				INFOPLIST_FILE = CTProdikeysMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.treblottomusictech.CTProdikeysMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CTProdikeysMonitor.app/Contents/MacOS/CTProdikeysMonitor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE21541B21A4F75700CB61C4 /* Build configuration list for PBXProject "CTProdikeysMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE21542921A4F75700CB61C4 /* Debug */,
+				BE21542A21A4F75700CB61C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE21542B21A4F75700CB61C4 /* Build configuration list for PBXNativeTarget "CTProdikeysMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE21542C21A4F75700CB61C4 /* Debug */,
+				BE21542D21A4F75700CB61C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9AD1D221A728F000AF494C /* Build configuration list for PBXNativeTarget "prodikeys-midi-driver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE9AD1D021A728F000AF494C /* Debug */,
+				BE9AD1D121A728F000AF494C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC227BD21B3C22600BCAD98 /* Build configuration list for PBXNativeTarget "CTProdikeysMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC227BE21B3C22600BCAD98 /* Debug */,
+				BEC227BF21B3C22600BCAD98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC227C021B3C22600BCAD98 /* Build configuration list for PBXNativeTarget "CTProdikeysMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC227C121B3C22600BCAD98 /* Debug */,
+				BEC227C221B3C22600BCAD98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE21541821A4F75700CB61C4 /* Project object */;
+}
