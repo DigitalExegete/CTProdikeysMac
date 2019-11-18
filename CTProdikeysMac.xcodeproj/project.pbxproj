@@ -10,13 +10,13 @@
 		BE21542521A4F75700CB61C4 /* CTProdikeysMac.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BE21542421A4F75700CB61C4 /* CTProdikeysMac.hpp */; };
 		BE21542721A4F75700CB61C4 /* CTProdikeysMac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE21542621A4F75700CB61C4 /* CTProdikeysMac.cpp */; };
 		BE27F2FC21A947CD008484A0 /* com.treblotto.CTProikeysMac.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE27F2FB21A947CD008484A0 /* com.treblotto.CTProikeysMac.plist */; };
+		BE2B147F23823C4700A1F91F /* HIDDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2B147623823C4600A1F91F /* HIDDevice.cpp */; };
+		BE2B148023823C4700A1F91F /* CTProdikeysHIDMidi.cp in Sources */ = {isa = PBXBuildFile; fileRef = BE2B147823823C4700A1F91F /* CTProdikeysHIDMidi.cp */; };
+		BE2B148123823C4700A1F91F /* HIDVendorMIDIDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2B147923823C4700A1F91F /* HIDVendorMIDIDriver.cpp */; };
+		BE2B148223823C4700A1F91F /* USBHIDMIDIDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2B147A23823C4700A1F91F /* USBHIDMIDIDevice.cpp */; };
+		BE2B148323823C4700A1F91F /* USBHIDMIDIDriverBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE2B147D23823C4700A1F91F /* USBHIDMIDIDriverBase.cpp */; };
 		BE9AD1D521A7338000AF494C /* ProdikeysUSBMIDI.c in Sources */ = {isa = PBXBuildFile; fileRef = BE9AD1D421A7338000AF494C /* ProdikeysUSBMIDI.c */; };
 		BE9AD1D621A733BC00AF494C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE21543421A6440E00CB61C4 /* CoreMIDI.framework */; };
-		BEC2277121AA92EC00BCAD98 /* USBHIDMIDIDriverBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2276121AA92EA00BCAD98 /* USBHIDMIDIDriverBase.cpp */; };
-		BEC2277221AA92EC00BCAD98 /* CTProdikeysHIDMidi.cp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2276321AA92EA00BCAD98 /* CTProdikeysHIDMidi.cp */; };
-		BEC2277321AA92EC00BCAD98 /* HIDVendorMIDIDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2276421AA92EB00BCAD98 /* HIDVendorMIDIDriver.cpp */; };
-		BEC2277421AA92EC00BCAD98 /* USBHIDMIDIDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2276621AA92EB00BCAD98 /* USBHIDMIDIDevice.cpp */; };
-		BEC2277521AA92EC00BCAD98 /* HIDDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2276B21AA92EC00BCAD98 /* HIDDevice.cpp */; };
 		BEC2277B21AA930300BCAD98 /* MIDIDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2277821AA930200BCAD98 /* MIDIDriver.cpp */; };
 		BEC2277C21AA930300BCAD98 /* MIDIDriverDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2277A21AA930300BCAD98 /* MIDIDriverDevice.cpp */; };
 		BEC2277F21AA937700BCAD98 /* MIDIDriverUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC2277E21AA937700BCAD98 /* MIDIDriverUtils.cpp */; };
@@ -55,6 +55,16 @@
 		BE21543221A50FD100CB61C4 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		BE21543421A6440E00CB61C4 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		BE27F2FB21A947CD008484A0 /* com.treblotto.CTProikeysMac.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.treblotto.CTProikeysMac.plist; sourceTree = "<group>"; };
+		BE2B147523823C4600A1F91F /* USBHIDMIDIDriverBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBHIDMIDIDriverBase.h; sourceTree = "<group>"; };
+		BE2B147623823C4600A1F91F /* HIDDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HIDDevice.cpp; sourceTree = "<group>"; };
+		BE2B147723823C4600A1F91F /* CTProdikeysHIDMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTProdikeysHIDMidi.h; sourceTree = "<group>"; };
+		BE2B147823823C4700A1F91F /* CTProdikeysHIDMidi.cp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CTProdikeysHIDMidi.cp; sourceTree = "<group>"; };
+		BE2B147923823C4700A1F91F /* HIDVendorMIDIDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HIDVendorMIDIDriver.cpp; sourceTree = "<group>"; };
+		BE2B147A23823C4700A1F91F /* USBHIDMIDIDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USBHIDMIDIDevice.cpp; sourceTree = "<group>"; };
+		BE2B147B23823C4700A1F91F /* HIDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIDDevice.h; sourceTree = "<group>"; };
+		BE2B147C23823C4700A1F91F /* HIDVendorMIDIDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIDVendorMIDIDriver.h; sourceTree = "<group>"; };
+		BE2B147D23823C4700A1F91F /* USBHIDMIDIDriverBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = USBHIDMIDIDriverBase.cpp; sourceTree = "<group>"; };
+		BE2B147E23823C4700A1F91F /* USBHIDMIDIDevice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = USBHIDMIDIDevice.hpp; sourceTree = "<group>"; };
 		BE9AD1CD21A728EF00AF494C /* prodikeys-midi-driver.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "prodikeys-midi-driver.plugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9AD1CF21A728F000AF494C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9AD1D321A7338000AF494C /* ProdikeysUSBMIDI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProdikeysUSBMIDI.h; sourceTree = "<group>"; };
@@ -64,20 +74,6 @@
 		BEC2275D21AA92EA00BCAD98 /* HIDDeviceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HIDDeviceManager.cpp; sourceTree = "<group>"; };
 		BEC2275E21AA92EA00BCAD98 /* HIDDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIDDeviceManager.h; sourceTree = "<group>"; };
 		BEC2275F21AA92EA00BCAD98 /* HIDMIDIDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIDMIDIDeviceManager.h; sourceTree = "<group>"; };
-		BEC2276021AA92EA00BCAD98 /* HIDDeviceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HIDDeviceManager.cpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDeviceManager/HIDDeviceManager.cpp; sourceTree = "<group>"; };
-		BEC2276121AA92EA00BCAD98 /* USBHIDMIDIDriverBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = USBHIDMIDIDriverBase.cpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/USBHIDMIDIDriverBase.cpp; sourceTree = "<group>"; };
-		BEC2276221AA92EA00BCAD98 /* CTProdikeysHIDMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTProdikeysHIDMidi.h; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/CTProdikeysHIDMidi.h; sourceTree = "<group>"; };
-		BEC2276321AA92EA00BCAD98 /* CTProdikeysHIDMidi.cp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CTProdikeysHIDMidi.cp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/CTProdikeysHIDMidi.cp; sourceTree = "<group>"; };
-		BEC2276421AA92EB00BCAD98 /* HIDVendorMIDIDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HIDVendorMIDIDriver.cpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDVendorMIDIDriver.cpp; sourceTree = "<group>"; };
-		BEC2276521AA92EB00BCAD98 /* USBHIDMIDIDriverBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USBHIDMIDIDriverBase.h; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/USBHIDMIDIDriverBase.h; sourceTree = "<group>"; };
-		BEC2276621AA92EB00BCAD98 /* USBHIDMIDIDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = USBHIDMIDIDevice.cpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/USBHIDMIDIDevice.cpp; sourceTree = "<group>"; };
-		BEC2276721AA92EB00BCAD98 /* HIDVendorMIDIDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIDVendorMIDIDriver.h; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDVendorMIDIDriver.h; sourceTree = "<group>"; };
-		BEC2276821AA92EB00BCAD98 /* HIDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIDDevice.h; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDevice.h; sourceTree = "<group>"; };
-		BEC2276921AA92EB00BCAD98 /* USBHIDMIDIDevice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = USBHIDMIDIDevice.hpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/USBHIDMIDIDevice.hpp; sourceTree = "<group>"; };
-		BEC2276A21AA92EC00BCAD98 /* HIDMIDIDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIDMIDIDeviceManager.h; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDeviceManager/HIDMIDIDeviceManager.h; sourceTree = "<group>"; };
-		BEC2276B21AA92EC00BCAD98 /* HIDDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HIDDevice.cpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDevice.cpp; sourceTree = "<group>"; };
-		BEC2276C21AA92EC00BCAD98 /* HIDDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HIDDeviceManager.h; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDeviceManager/HIDDeviceManager.h; sourceTree = "<group>"; };
-		BEC2276D21AA92EC00BCAD98 /* HIDMIDIDeviceManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HIDMIDIDeviceManager.cpp; path = ../../GenericUSBMIDI/GenericUSBMidi/shared/HIDMIDI/HIDDeviceManager/HIDMIDIDeviceManager.cpp; sourceTree = "<group>"; };
 		BEC2277721AA930200BCAD98 /* MIDIDriverDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIDIDriverDevice.h; sourceTree = "<group>"; };
 		BEC2277821AA930200BCAD98 /* MIDIDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIDriver.cpp; sourceTree = "<group>"; };
 		BEC2277921AA930200BCAD98 /* MIDIDriverClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIDIDriverClass.h; sourceTree = "<group>"; };
@@ -198,6 +194,16 @@
 		BE9AD1CE21A728F000AF494C /* prodikeys-midi-driver */ = {
 			isa = PBXGroup;
 			children = (
+				BE2B147823823C4700A1F91F /* CTProdikeysHIDMidi.cp */,
+				BE2B147723823C4600A1F91F /* CTProdikeysHIDMidi.h */,
+				BE2B147623823C4600A1F91F /* HIDDevice.cpp */,
+				BE2B147B23823C4700A1F91F /* HIDDevice.h */,
+				BE2B147923823C4700A1F91F /* HIDVendorMIDIDriver.cpp */,
+				BE2B147C23823C4700A1F91F /* HIDVendorMIDIDriver.h */,
+				BE2B147A23823C4700A1F91F /* USBHIDMIDIDevice.cpp */,
+				BE2B147E23823C4700A1F91F /* USBHIDMIDIDevice.hpp */,
+				BE2B147D23823C4700A1F91F /* USBHIDMIDIDriverBase.cpp */,
+				BE2B147523823C4600A1F91F /* USBHIDMIDIDriverBase.h */,
 				BEC2275B21AA92EA00BCAD98 /* HIDDeviceManager */,
 				BEC2278E21AA944500BCAD98 /* IOServiceClient.cpp */,
 				BEC2278D21AA944500BCAD98 /* IOServiceClient.h */,
@@ -216,20 +222,6 @@
 				BEC2277921AA930200BCAD98 /* MIDIDriverClass.h */,
 				BEC2277A21AA930300BCAD98 /* MIDIDriverDevice.cpp */,
 				BEC2277721AA930200BCAD98 /* MIDIDriverDevice.h */,
-				BEC2276021AA92EA00BCAD98 /* HIDDeviceManager.cpp */,
-				BEC2276C21AA92EC00BCAD98 /* HIDDeviceManager.h */,
-				BEC2276D21AA92EC00BCAD98 /* HIDMIDIDeviceManager.cpp */,
-				BEC2276A21AA92EC00BCAD98 /* HIDMIDIDeviceManager.h */,
-				BEC2276221AA92EA00BCAD98 /* CTProdikeysHIDMidi.h */,
-				BEC2276321AA92EA00BCAD98 /* CTProdikeysHIDMidi.cp */,
-				BEC2276421AA92EB00BCAD98 /* HIDVendorMIDIDriver.cpp */,
-				BEC2276721AA92EB00BCAD98 /* HIDVendorMIDIDriver.h */,
-				BEC2276B21AA92EC00BCAD98 /* HIDDevice.cpp */,
-				BEC2276821AA92EB00BCAD98 /* HIDDevice.h */,
-				BEC2276121AA92EA00BCAD98 /* USBHIDMIDIDriverBase.cpp */,
-				BEC2276521AA92EB00BCAD98 /* USBHIDMIDIDriverBase.h */,
-				BEC2276621AA92EB00BCAD98 /* USBHIDMIDIDevice.cpp */,
-				BEC2276921AA92EB00BCAD98 /* USBHIDMIDIDevice.hpp */,
 				BE9AD1CF21A728F000AF494C /* Info.plist */,
 				BE9AD1D321A7338000AF494C /* ProdikeysUSBMIDI.h */,
 				BE9AD1D421A7338000AF494C /* ProdikeysUSBMIDI.c */,
@@ -469,19 +461,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC2277C21AA930300BCAD98 /* MIDIDriverDevice.cpp in Sources */,
-				BEC2277321AA92EC00BCAD98 /* HIDVendorMIDIDriver.cpp in Sources */,
 				BEC2278A21AA941900BCAD98 /* CADebugPrintf.cpp in Sources */,
+				BE2B148323823C4700A1F91F /* USBHIDMIDIDriverBase.cpp in Sources */,
 				BEC2278B21AA941900BCAD98 /* CAMutex.cpp in Sources */,
+				BE2B147F23823C4700A1F91F /* HIDDevice.cpp in Sources */,
+				BE2B148223823C4700A1F91F /* USBHIDMIDIDevice.cpp in Sources */,
 				BEC2277F21AA937700BCAD98 /* MIDIDriverUtils.cpp in Sources */,
-				BEC2277521AA92EC00BCAD98 /* HIDDevice.cpp in Sources */,
-				BEC2277121AA92EC00BCAD98 /* USBHIDMIDIDriverBase.cpp in Sources */,
 				BEC2278C21AA941900BCAD98 /* CADebugMacros.cpp in Sources */,
+				BE2B148123823C4700A1F91F /* HIDVendorMIDIDriver.cpp in Sources */,
 				BEC2278221AA93FE00BCAD98 /* CAHostTimeBase.cpp in Sources */,
+				BE2B148023823C4700A1F91F /* CTProdikeysHIDMidi.cp in Sources */,
 				BEC2277B21AA930300BCAD98 /* MIDIDriver.cpp in Sources */,
 				BEC2278F21AA944500BCAD98 /* IOServiceClient.cpp in Sources */,
 				BE9AD1D521A7338000AF494C /* ProdikeysUSBMIDI.c in Sources */,
-				BEC2277221AA92EC00BCAD98 /* CTProdikeysHIDMidi.cp in Sources */,
-				BEC2277421AA92EC00BCAD98 /* USBHIDMIDIDevice.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

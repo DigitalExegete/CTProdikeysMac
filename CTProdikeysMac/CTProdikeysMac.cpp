@@ -147,7 +147,7 @@ IOReturn TMMTCTProdikeysMIDI::handleReport(
 			
 			
 			setProperty("isMidiActive", inMidiMode);
-			setProperty("usbLocationID", );
+//			setProperty("usbLocationID", );
 			//IOReturn retVal = IOHIDDeviceSetReport(handler->device, kIOHIDReportTypeOutput, 6, report_data, 3);
 			if (inMidiMode)
 			{
